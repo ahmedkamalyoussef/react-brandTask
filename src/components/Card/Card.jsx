@@ -15,11 +15,11 @@ function Card(props) {
         data = SNEAKERS
     }
 
-    {console.log(data)}
+    // {console.log(data)}
         return (
             <>
-                {data.map((sneaker, index) => (
-                    <div key={index} className="col-6 card mt-2 text-center p-2 m-1 justify-content-between" style={{ width: '13rem' }}>
+                {data.map((sneaker) => (
+                    <div  className="col-6 card mt-2 text-center p-2 m-2 justify-content-between" style={{ width: '15rem' }}>
                         <img src={sneaker.imageUrl} className="card-img-top" alt="..." />
                         <div className="card-body ">
                             <h5 className="card-title">{sneaker.brand}</h5>
