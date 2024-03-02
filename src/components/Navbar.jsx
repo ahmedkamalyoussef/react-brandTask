@@ -19,7 +19,7 @@ function Navbar() {
         <button className="btn btn-outline-info m-2" onClick={()=>{setSearch("Vans")}}>Vans</button>
         
       </ul>
-        <input className="form-control me-2" type="search" placeholder="Search..." onChange={(e) => setSearch(e.target.value)}/>
+        <input className="form-control me-2 w-25" type="search" placeholder="Search..." onChange={(e) => setSearch(e.target.value)}/>
     </div>
   </div>
 </nav>
