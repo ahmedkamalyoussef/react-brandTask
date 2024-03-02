@@ -1,5 +1,6 @@
 import React from 'react';
-import SNEAKERS from "../data/data";
+import SNEAKERS from "../../data/data";
+import "./Card.css"
 function Card(props) {
     
     let data = SNEAKERS.filter((sneaker) => {
@@ -18,9 +19,9 @@ function Card(props) {
         return (
             <>
                 {data.map((sneaker, index) => (
-                    <div key={index} className="col-4 card mt-2 text-center m-1 p-2" style={{ width: '11rem' }}>
+                    <div key={index} className="col-6 card mt-2 text-center p-2 m-1 justify-content-between" style={{ width: '13rem' }}>
                         <img src={sneaker.imageUrl} className="card-img-top" alt="..." />
-                        <div className="card-body">
+                        <div className="card-body ">
                             <h5 className="card-title">{sneaker.brand}</h5>
                             <p className="card-text">{sneaker.colorway}</p>
                             <p className="card-text">{sneaker.model}</p>

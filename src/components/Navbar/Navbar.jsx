@@ -1,6 +1,6 @@
 import { Button } from 'bootstrap'
 import React, { useState } from 'react'
-import Card from './Card';
+import Card from '../Card/Card';
 
 function Navbar() {
   //const [edit,setEdit]=useState("");
@@ -26,7 +26,7 @@ function Navbar() {
 <div>
 </div>
 <div className="container ">
-      <div className="row mt-5 text-center"> 
+      <div className="row mt-5 justify-content-center m-auto"> 
 <Card name={search} />
 </div>
 </div>
