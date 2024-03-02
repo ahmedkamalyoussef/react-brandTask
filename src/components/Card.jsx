@@ -2,11 +2,12 @@ import React from 'react';
 import SNEAKERS from "../data/data";
 function Card(props) {
     let data = SNEAKERS.filter((sneaker) => {
-        return sneaker.model.toLowerCase().includes(props.name.toLowerCase());
+        return sneaker.brand.toLowerCase().includes(props.name.toLowerCase());
     });
     if (props.name === "All") {
         data = SNEAKERS
     }
+
     {console.log(data)}
         return (
             <>
