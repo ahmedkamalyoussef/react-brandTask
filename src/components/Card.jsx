@@ -1,25 +1,17 @@
 import React from 'react';
 import SNEAKERS from "../data/data";
-
 function Card(props) {
     let data = SNEAKERS.filter((sneaker) => {
-        return sneaker.brand.toLowerCase().includes(props.name.toLowerCase());
-        
+        return sneaker.model.toLowerCase().includes(props.name.toLowerCase());
     });
     if (props.name === "All") {
         data = SNEAKERS
     }
     {console.log(data)}
-
-    
-    
-
-
         return (
             <>
-            
                 {data.map((sneaker, index) => (
-                    <div key={index} className="col-4 card mt-5 text-center m-1 p-2" style={{ width: '12rem' }}>
+                    <div key={index} className="col-4 card mt-2 text-center m-1 p-2" style={{ width: '11rem' }}>
                         <img src={sneaker.imageUrl} className="card-img-top" alt="..." />
                         <div className="card-body">
                             <h5 className="card-title">{sneaker.brand}</h5>
@@ -30,7 +22,5 @@ function Card(props) {
                 ))}
             </>
         );
-    
 }
-
 export default Card;
